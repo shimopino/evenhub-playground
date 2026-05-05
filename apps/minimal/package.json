@@ -1,0 +1,23 @@
+{
+  "name": "@evenhub-playground/minimal",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc --noEmit && vite build",
+    "preview": "vite preview",
+    "pack": "evenhub pack app.json dist",
+    "simulator": "evenhub-simulator http://localhost:5173 --automation-port 9898",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@evenrealities/even_hub_sdk": "catalog:"
+  },
+  "devDependencies": {
+    "@evenrealities/evenhub-cli": "catalog:",
+    "@evenrealities/evenhub-simulator": "catalog:",
+    "typescript": "catalog:",
+    "vite": "catalog:"
+  }
+}
