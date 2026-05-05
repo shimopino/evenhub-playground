@@ -157,9 +157,7 @@ async function showLog(event: EvenHubEvent) {
   await updateContainer(BODY_ID, "body", detail);
 }
 
-let unsubscribe = () => {};
-
-unsubscribe = bridge.onEvenHubEvent((event: EvenHubEvent) => {
+const unsubscribe = bridge.onEvenHubEvent((event: EvenHubEvent) => {
   const sysType = event.sysEvent?.eventType;
   const textType = event.textEvent?.eventType;
 
