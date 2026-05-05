@@ -1,0 +1,19 @@
+html,
+body {
+    margin: 0;
+    height: 100%;
+    background: #232323;
+    color: #e5e5e5;
+    font:
+        14px/1.4 -apple-system,
+        BlinkMacSystemFont,
+        system-ui,
+        sans-serif;
+    touch-action: manipulation;
+    -webkit-text-size-adjust: 100%;
+    overscroll-behavior: none;
+}
+#app {
+    display: flex;
+    height: 100%;
+}

@@ -3,9 +3,7 @@
   "private": true,
   "packageManager": "pnpm@10.13.1",
   "scripts": {
-    "qr": "node scripts/eventhub-qr.mjs",
-    "sim:screenshot": "node scripts/evenhub-simulator-shot.mjs",
-    "sim:console": "node scripts/evenhub-simulator-console.mjs"
+    "qr": "node scripts/generate-qr.mjs"
   },
   "devDependencies": {
     "@evenrealities/evenhub-cli": "catalog:"
