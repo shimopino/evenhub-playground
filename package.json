@@ -1,0 +1,13 @@
+{
+  "name": "evenrealities-monorepo",
+  "private": true,
+  "packageManager": "pnpm@10.13.1",
+  "scripts": {
+    "qr": "node scripts/eventhub-qr.mjs",
+    "sim:screenshot": "node scripts/evenhub-simulator-shot.mjs",
+    "sim:console": "node scripts/evenhub-simulator-console.mjs"
+  },
+  "devDependencies": {
+    "@evenrealities/evenhub-cli": "catalog:"
+  }
+}
