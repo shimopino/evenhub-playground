@@ -13,7 +13,8 @@
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
-    "@evenrealities/even_hub_sdk": "catalog:"
+    "@evenrealities/even_hub_sdk": "catalog:",
+    "ws": "^8.20.0"
   },
   "devDependencies": {
     "@evenrealities/evenhub-cli": "catalog:",
