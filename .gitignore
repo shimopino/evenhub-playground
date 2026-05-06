@@ -3,3 +3,4 @@ dist
 # shots
 
 settings.local.json
+.env
