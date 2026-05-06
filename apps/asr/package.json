@@ -1,0 +1,24 @@
+{
+  "name": "@evenhub-playground/asr",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "dev:proxy": "node proxy/server.mjs",
+    "build": "tsc --noEmit && vite build",
+    "preview": "vite preview",
+    "pack": "evenhub pack",
+    "simulator": "evenhub-simulator http://localhost:5173",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@evenrealities/even_hub_sdk": "catalog:"
+  },
+  "devDependencies": {
+    "@evenrealities/evenhub-cli": "catalog:",
+    "@evenrealities/evenhub-simulator": "catalog:",
+    "typescript": "catalog:",
+    "vite": "catalog:"
+  }
+}
