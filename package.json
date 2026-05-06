@@ -3,7 +3,8 @@
   "private": true,
   "packageManager": "pnpm@10.13.1",
   "scripts": {
-    "qr": "node scripts/generate-qr.mjs"
+    "qr": "node scripts/generate-qr.mjs",
+    "list:minimal:sim-logs": "node scripts/list-minimal-sim-logs.mjs"
   },
   "devDependencies": {
     "@evenrealities/evenhub-cli": "catalog:"

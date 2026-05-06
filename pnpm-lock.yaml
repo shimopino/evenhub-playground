@@ -15,6 +15,9 @@ catalogs:
     '@evenrealities/evenhub-simulator':
       specifier: ^0.7.2
       version: 0.7.3
+    '@evenrealities/pretext':
+      specifier: ^0.1.4
+      version: 0.1.4
     typescript:
       specifier: ^6.0.3
       version: 6.0.3
@@ -87,6 +90,28 @@ importers:
         specifier: 'catalog:'
         version: 8.0.10
 
+  apps/list-minimal:
+    dependencies:
+      '@evenrealities/even_hub_sdk':
+        specifier: 'catalog:'
+        version: 0.0.10
+      '@evenrealities/pretext':
+        specifier: 'catalog:'
+        version: 0.1.4
+    devDependencies:
+      '@evenrealities/evenhub-cli':
+        specifier: 'catalog:'
+        version: 0.1.13(typescript@6.0.3)
+      '@evenrealities/evenhub-simulator':
+        specifier: 'catalog:'
+        version: 0.7.3
+      typescript:
+        specifier: 'catalog:'
+        version: 6.0.3
+      vite:
+        specifier: 'catalog:'
+        version: 8.0.10
+
   apps/minimal:
     dependencies:
       '@evenrealities/even_hub_sdk':
@@ -130,6 +155,9 @@ packages:
   '@evenrealities/evenhub-simulator@0.7.3':
     resolution: {integrity: sha512-ZZ/leB3ed5LFJ8eERgQBltJIpibwu2RtjIwtomwmXl0+0bDPCAm6KiSLAkqlzMeweEu6TVxT0fh8mK16+M0pWA==}
     hasBin: true
+
+  '@evenrealities/pretext@0.1.4':
+    resolution: {integrity: sha512-gSZk/uxIhZW3geOM5bP1IS0s1sg7cA7KLLpBDgH9T1+ZNHMIFTMcgQN1qw4+/Xi/rcxsDsWZ7UZndIS/s4fRcA==}
 
   '@evenrealities/sim-darwin-arm64@0.7.3':
     resolution: {integrity: sha512-M3ANiH8gc+TqwFxpcj1ncVTWMODvFIv1rCsYOJyMR0JWyAe8rRjdaRZEGL9BG7Qw9qhW/qMwSV2NGVSwUgJNlQ==}
@@ -723,6 +751,8 @@ snapshots:
       '@evenrealities/sim-darwin-x64': 0.7.3
       '@evenrealities/sim-linux-x64': 0.7.3
       '@evenrealities/sim-win32-x64': 0.7.3
+
+  '@evenrealities/pretext@0.1.4': {}
 
   '@evenrealities/sim-darwin-arm64@0.7.3':
     optional: true
