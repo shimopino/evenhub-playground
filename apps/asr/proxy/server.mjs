@@ -324,7 +324,7 @@ function createSonioxSession(browser) {
 
         for (const token of message.tokens) {
           const text = typeof token?.text === "string" ? token.text : "";
-          if (!text) {
+          if (!text || text === "<end>") {
             continue;
           }
 
