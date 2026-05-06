@@ -126,10 +126,25 @@ function queueTextUpgrade(containerID: number, containerName: string, content: s
     });
 }
 
+function normalizeTranscriptText(text: string): string {
+  return text.replaceAll("<end>", "");
+}
+
 function trimTranscript(text: string): string {
-  return text.length <= MAX_TRANSCRIPT_CHARS
-    ? text
-    : text.slice(text.length - MAX_TRANSCRIPT_CHARS);
+  const normalized = normalizeTranscriptText(text);
+  if (normalized.length <= MAX_TRANSCRIPT_CHARS) {
+    return normalized;
+  }
+
+  const lines = normalized.split("\n");
+  while (lines.length > 1 && lines.join("\n").length > MAX_TRANSCRIPT_CHARS) {
+    lines.shift();
+  }
+
+  const trimmed = lines.join("\n");
+  return trimmed.length <= MAX_TRANSCRIPT_CHARS
+    ? trimmed
+    : trimmed.slice(trimmed.length - MAX_TRANSCRIPT_CHARS);
 }
 
 function buildTranscriptPreview(): string {
@@ -151,7 +166,10 @@ function renderTranscriptUi() {
     committedTranscript.length > 0 &&
     (liveFinalText.length > 0 || liveInterimText.length > 0);
   const finalText = `${committedTranscript}${needsSeparator ? "\n" : ""}${liveFinalText}`;
-  setTranscript(finalText, liveInterimText);
+  setTranscript(
+    normalizeTranscriptText(finalText),
+    normalizeTranscriptText(liveInterimText),
+  );
 }
 
 function scheduleTranscriptRender() {
@@ -266,8 +284,8 @@ async function startRecording() {
     nextStt = startSttStream(
       PROXY_URL,
       ({ finalText, interimText }) => {
-        liveFinalText = finalText;
-        liveInterimText = interimText;
+        liveFinalText = normalizeTranscriptText(finalText);
+        liveInterimText = normalizeTranscriptText(interimText);
 
         setTranscriptContent(buildTranscriptPreview());
         renderTranscriptUi();
