@@ -14,7 +14,7 @@
   },
   "dependencies": {
     "@evenrealities/even_hub_sdk": "catalog:",
-    "ws": "^8.20.0"
+    "ws": "^8.21.0"
   },
   "devDependencies": {
     "@evenrealities/evenhub-cli": "catalog:",
