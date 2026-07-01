@@ -7,8 +7,8 @@ settings:
 catalogs:
   default:
     '@evenrealities/even_hub_sdk':
-      specifier: ^0.0.10
-      version: 0.0.10
+      specifier: ^0.0.11
+      version: 0.0.11
     '@evenrealities/evenhub-cli':
       specifier: ^0.1.12
       version: 0.1.13
@@ -37,7 +37,7 @@ importers:
     dependencies:
       '@evenrealities/even_hub_sdk':
         specifier: 'catalog:'
-        version: 0.0.10
+        version: 0.0.11
       ws:
         specifier: ^8.20.0
         version: 8.20.0
@@ -59,7 +59,7 @@ importers:
     dependencies:
       '@evenrealities/even_hub_sdk':
         specifier: 'catalog:'
-        version: 0.0.10
+        version: 0.0.11
     devDependencies:
       '@evenrealities/evenhub-cli':
         specifier: 'catalog:'
@@ -78,7 +78,7 @@ importers:
     dependencies:
       '@evenrealities/even_hub_sdk':
         specifier: 'catalog:'
-        version: 0.0.10
+        version: 0.0.11
     devDependencies:
       '@evenrealities/evenhub-cli':
         specifier: 'catalog:'
@@ -97,7 +97,7 @@ importers:
     dependencies:
       '@evenrealities/even_hub_sdk':
         specifier: 'catalog:'
-        version: 0.0.10
+        version: 0.0.11
       '@evenrealities/pretext':
         specifier: 'catalog:'
         version: 0.1.4
@@ -119,7 +119,7 @@ importers:
     dependencies:
       '@evenrealities/even_hub_sdk':
         specifier: 'catalog:'
-        version: 0.0.10
+        version: 0.0.11
     devDependencies:
       '@evenrealities/evenhub-cli':
         specifier: 'catalog:'
@@ -145,8 +145,8 @@ packages:
   '@emnapi/wasi-threads@1.2.1':
     resolution: {integrity: sha512-uTII7OYF+/Mes/MrcIOYp5yOtSMLBWSIoLPpcgwipoiKbli6k322tcoFsxoIIxPDqW01SQGAgko4EzZi2BNv2w==}
 
-  '@evenrealities/even_hub_sdk@0.0.10':
-    resolution: {integrity: sha512-95zmlbFzyyh+TxPz5Wq8Ix4IxUDZzo/WJWAUXPQ/83kaU8R78MOYYBgKDM47Yw61LoEn+Ob5GNLDu/T9bj85xA==}
+  '@evenrealities/even_hub_sdk@0.0.11':
+    resolution: {integrity: sha512-QLj15JmMbfPncl5hodTZEgQ42Dky85kvtlnqjEIsYZtvR4a5zWtdmUma0NDCNxhE+hxCjUpSGsu1uyDh1iUMdw==}
     engines: {node: ^20.0.0 || >=22.0.0}
 
   '@evenrealities/evenhub-cli@0.1.13':
@@ -744,7 +744,7 @@ snapshots:
       tslib: 2.8.1
     optional: true
 
-  '@evenrealities/even_hub_sdk@0.0.10': {}
+  '@evenrealities/even_hub_sdk@0.0.11': {}
 
   '@evenrealities/evenhub-cli@0.1.13(typescript@6.0.3)':
     dependencies:
