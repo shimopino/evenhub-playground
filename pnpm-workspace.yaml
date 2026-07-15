@@ -2,7 +2,7 @@ packages:
   - "apps/*"
 
 catalog:
-  typescript: ^6.0.3
+  typescript: ^7.0.2
   vite: ^8.0.10
   "@evenrealities/even_hub_sdk": ^0.0.10
   "@evenrealities/pretext": ^0.1.4
