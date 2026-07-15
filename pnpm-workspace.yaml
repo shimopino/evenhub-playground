@@ -7,4 +7,4 @@ catalog:
   "@evenrealities/even_hub_sdk": ^0.0.10
   "@evenrealities/pretext": ^0.1.4
   "@evenrealities/evenhub-cli": ^0.1.12
-  "@evenrealities/evenhub-simulator": ^0.7.2
+  "@evenrealities/evenhub-simulator": ^0.8.0
